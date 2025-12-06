@@ -95,7 +95,7 @@ History viewer
 
 Raw JSON response viewer
 
-🏗️ System Architecture
+'''🏗️ System Architecture
 User Uploads Video
         ↓
 Video Frame Sampling (OpenCV)
@@ -114,9 +114,9 @@ Error Detection (Rule-Based)
         ↓
 Overlay Video Generation
         ↓
-DB Storage & History Tracking
+DB Storage & History Tracking'''
 
-📁 Repository Structure
+'''📁 Repository Structure
 ├── main.py                  # FastAPI server + UI route (/ui)
 ├── database.py              # SQLite DB handling
 ├── smartswing.db            # Stored history
@@ -130,7 +130,7 @@ DB Storage & History Tracking
 │   ├── error_detection.py   # Coaching cue generation
 │   ├── overlay.py           # Skeleton + phase overlay video
 │
-└── README.md
+└── README.md'''
 
 ⚙️ Installation & Setup
 1. Clone the Repository
@@ -159,40 +159,7 @@ Upload a swing video (.mp4)
 API Docs (Swagger):
 http://localhost:8000/docs
 
-Endpoints:
-POST /analyze_swing
 
-Upload a video and receive:
-
-phases
-
-metrics
-
-scores
-
-coaching tips
-
-overlay video path
-
-GET /history
-
-Retrieve past swing sessions for progress tracking.
-
-📽️ Sample Output (Screenshots)
-
-Add these after running the UI:
-
-Swing score dashboard
-
-Metrics display
-
-Coaching cues
-
-Overlay skeleton video
-
-History JSON
-
-(Place screenshots here in your GitHub repo)
 
 🧪 Technologies Used
 
@@ -230,11 +197,3 @@ You may modify or extend it with attribution.
 🙋‍♂️ Author
 
 Harshit Tiwari
-
-Feel free to fork, submit issues, or contribute enhancements!
-
-If you want, I can also generate:
-
-✅ requirements.txt
-✅ A GitHub-friendly preview.gif
-✅ Short description for repo sidebar
