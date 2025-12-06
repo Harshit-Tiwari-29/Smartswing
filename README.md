@@ -95,7 +95,8 @@ History viewer
 
 Raw JSON response viewer
 
-'''🏗️ System Architecture
+```
+🏗️ System Architecture
 User Uploads Video
         ↓
 Video Frame Sampling (OpenCV)
@@ -114,9 +115,11 @@ Error Detection (Rule-Based)
         ↓
 Overlay Video Generation
         ↓
-DB Storage & History Tracking'''
+DB Storage & History Tracking
+```
 
-'''📁 Repository Structure
+```
+📁 Repository Structure
 ├── main.py                  # FastAPI server + UI route (/ui)
 ├── database.py              # SQLite DB handling
 ├── smartswing.db            # Stored history
@@ -130,7 +133,9 @@ DB Storage & History Tracking'''
 │   ├── error_detection.py   # Coaching cue generation
 │   ├── overlay.py           # Skeleton + phase overlay video
 │
-└── README.md'''
+└── README.md
+```
+
 
 ⚙️ Installation & Setup
 1. Clone the Repository
@@ -143,10 +148,10 @@ source venv/bin/activate   # Mac/Linux
 venv\Scripts\activate      # Windows
 
 3. Install Dependencies
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 4. Run the Server
-uvicorn main:app --reload
+`uvicorn main:app --reload`
 
 🖥️ Usage
 Open the Custom SmartSwing UI:
@@ -157,7 +162,7 @@ Upload a swing video (.mp4)
 → System analyzes swing, displays results, generates coaching tips, and saves session history.
 
 API Docs (Swagger):
-http://localhost:8000/docs
+`http://localhost:8000/docs`
 
 
 
